@@ -78,7 +78,7 @@ APP_LIBFFI="/app/$VENDORED_LIBFFI"
 set-env SPOTIFY_LIBRARY_PATH "$APP_SPOTIFY/lib"
 set-env LIBFFI_LIBRARY_PATH "$APP_LIBFFI/lib"
 
-set-default-env PKG_CONFIG_PATH "$APP_LIBFFI/lib/pkgconfig"
+set-default-env PKG_CONFIG_PATH "$APP_SPOTIFY/lib/pkgconfig:$APP_LIBFFI/lib/pkgconfig"
 set-default-env LIBRARY_PATH "$APP_SPOTIFY/lib:$APP_LIBFFI/lib"
 set-default-env LD_LIBRARY_PATH "$APP_SPOTIFY/lib:$APP_LIBFFI/lib"
 set-default-env CPATH "$APP_SPOTIFY/include:$APP_LIBFFI/lib/libffi-3.0.13/include"
